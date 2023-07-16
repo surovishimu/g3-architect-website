@@ -2,6 +2,180 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&display=swap');
 
+/* shared style */
 * {
     font-family: 'Work Sans', sans-serif;
+}
+
+.title-description {
+    color: #727272;
+    font-weight: 400;
+}
+
+/* nav style */
+.header-container {
+    background-color: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+
+.nav-title {
+    font-size: 3rem;
+    font-weight: 700px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #424242;
+}
+
+/* banner-style */
+
+.banner-content {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner-title {
+    color: #131313;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.btn-primary {
+    border-radius: 5px;
+    background: #FF900E;
+    width: 170px;
+    height: 45px;
+    border: 0;
+    color: white;
+    font-weight: 600;
+}
+
+.banner-img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* feature design */
+
+main {
+    max-width: 1400px;
+    margin: 50px auto;
+}
+
+.feature-container {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.feature-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+}
+
+.feature-content {
+    margin-left: 100px;
+    max-width: 500px;
+}
+
+.title-1 {
+    color: #727272;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.title-2 {
+    color: #131313;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.title-3 {
+    color: #FF900E;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+/* responsive for small device  */
+@media screen and (max-width:576px) {
+    .header-container {
+        padding: 20px;
+    }
+
+    .nav-container,
+    .feature-container {
+        flex-direction: column;
+
+    }
+
+    .nav-title {
+        font-size: 2rem;
+    }
+
+    nav li {
+        font-size: .90rem;
+    }
+
+    .banner-title {
+        font-size: 2rem;
+    }
+
+    .feature-image {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-content {
+        margin-left: 10px;
+    }
+
+}
+
+/* responsive for medium device */
+@media screen and (min-width:576px) and (max-width:970px) {
+
+    .nav-container,
+    .feature-container {
+        flex-direction: column;
+
+    }
+
+    .header-container {
+        padding: 10px;
+    }
+
+    .nav-title {
+        font-size: 2.5rem;
+    }
+
+    .banner-title {
+        font-size: 2.5rem;
+    }
+    .feature-image {
+       grid-template-columns: 1fr;
+     
+    }
+    .feature-content {
+        margin-left: 10px;
+    }
 }
